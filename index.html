@@ -22,7 +22,7 @@
                 <li><a href="#">Join Us</a></li>
             </ul>
         </div>
-        <div id="menu2">
+        <div id="menu2" data-isVisible="false">
             <ul >
                 <li><a href="#">Home</a></li>
                 <li><a href="#about-us">About Us</a></li>
@@ -32,7 +32,7 @@
             </ul>
         </div>
         <div id="click" class="bar">
-            <button onclick="hey('')"><img src="/Location-icons/bar.png" alt=""></button>
+            <button id="mobileNavToggle" data-isVisible="false"><img src="/Location-icons/bar.png" alt=""></button>
         </div>
     </nav>
 
@@ -453,16 +453,17 @@
     </div>
 </footer>
     <script>
-        // function click(){
-        //     var after = document.getElementById("click");
-        //     console.log(click.innerHTML);
-        //     click.style.display = 'block';
-           
-        function hey(){
-            var a = document.getElementById("menu2");
-            console.log(menu2.innerHTML);
-            menu2.style.display = 'block';
-        }
+        const mobileNavToggle = document.getElementById('mobileNavToggle')
+        const mobileMenu = document.getElementById('menu2');
+
+        mobileNavToggle.addEventListener('click', () => {
+            if (mobileMenu.classList.contains('visible')) {
+                mobileMenu.classList.remove('visible')
+            } else {
+                mobileMenu.classList.add('visible')
+            }
+        })
+
         
     </script>
 </body>
