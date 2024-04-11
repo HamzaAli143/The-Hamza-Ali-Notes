@@ -46,7 +46,8 @@ nav .bar{
     top: 100%;
     width: 60%;
     height: 60vh;
-    background-color: darkblue;
+    background-color: #098bbeea;
+    
 }
 #menu2 ul{
     display: block;
