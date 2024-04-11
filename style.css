@@ -342,7 +342,9 @@ nav ul li a:hover{
     
 }
 
-
+::-webkit-scrollbar{
+    display: none;
+}
 
 #physics .slide-flex-1{
     display: flex;
