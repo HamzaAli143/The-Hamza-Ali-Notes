@@ -492,9 +492,6 @@ nav ul li a:hover{
         grid-column-end: 13;
     }
 }
-
-
-
 /*BODY-5 CSS*/
 #body-5{
     display: grid;
@@ -505,7 +502,7 @@ nav ul li a:hover{
 .body-5-content{
     grid-column-start: 1;
     grid-column-end: 7;
-   
+    line-height: 20px;
     /* border: 2px solid black; */
 }
 
@@ -513,15 +510,51 @@ nav ul li a:hover{
     font-size: 50px;
     font-family: arial;
 }
-#body-5 .body-1-content{
-    padding: 50px 0;
-    /* line-height: 50px; */
+
+.contact-us-icons{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 65%;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 30px rgb(202, 199, 199) ;
+    /* backdrop-filter: blur(30px); */
+    /* filter: drop-shadow(0px 0px 5px rgb(235, 228, 228)); */
+}
+.contact-us-icons .boxing{
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+}
+.boxing img{
+    transition: .3s all ease-out;
+}
+.boxing img:hover{
+    transform: scale(1.2);
+
+}
+@media only screen and (max-width:800px) and (min-width:200px){
+    
+    .contact-us-icons{
+        width: 80%;
+        margin: auto;
+    }
+}
+@media only screen and (max-width:355px) and (min-width:200px){
+    .contact-us-icons{
+        width: 89%;
+        margin: auto;
+    }
 }
 #body-5 .paragraph{
     /* border: 2px solid black; */
     /* padding: 20px 250px; */
     font-size: 22px;
     font-family: 'Franklin Gothic';
+    line-height: 30px;
 }
 #body-5 .btn1{
     background-color: rgb(9, 139, 190);
@@ -539,7 +572,7 @@ nav ul li a:hover{
 .body-5-content2{
     grid-column-start: 8;
     grid-column-end: 13;
-    line-height: 40px; background-color: #93a59825;
+    line-height: 50px; background-color: #93a59825;
     padding: 20px 20px 40px 20px ;
     /* border: 2px solid black; */
     box-shadow: 0px 0px 10px gray;
@@ -559,7 +592,7 @@ nav ul li a:hover{
     flex-wrap: wrap;
 }
 .body-5-content2 input{
-    border: none; outline: none; padding: 10px; 
+    border: none; outline: none; padding:  16px 10px; 
     border-radius: 5px;
     
 }
@@ -575,6 +608,7 @@ nav ul li a:hover{
     box-shadow: 0px 0px 10px rgb(7, 135, 185);
     cursor: pointer;
 }
+
 @media only screen and (max-width:986px){
     .body-5-content{
         grid-column-start: 1;
