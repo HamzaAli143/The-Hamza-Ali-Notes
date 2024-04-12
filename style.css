@@ -588,7 +588,7 @@ nav ul li a:hover{
     padding: 20px 0;
 } */
 .body-5-content2 .name{
-    display: flex;
+    display: block;
     gap: 20px;
     flex-wrap: wrap;
 }
