@@ -121,7 +121,7 @@ nav ul li a:hover{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-   padding: 5% 0;
+   padding: 2% 0;
 }
 .body-1-content{
     grid-column-start: 2;
@@ -166,6 +166,13 @@ nav ul li a:hover{
     
 }
 @media only screen and (max-width:450px) and (min-width:200px){
+    
+    #body-1{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+       padding: 5% 0;
+    }
     #body-1 .paragraph{
         /* color: brown; */
         font-size: 18px;
