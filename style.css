@@ -52,10 +52,18 @@ nav .bar{
 #menu2 ul{
     display: block;
     padding-top: 20px;
+    list-style: none;
 }
 #menu2 ul li {
     text-align: center;
     padding: 15px 0;
+}
+#menu2 ul li a{
+    padding: 20px 0;
+    text-decoration: none;
+    color: white; font-size: 20px;
+    font-weight: 400px;
+    transition: .4s all ease-in-out;
 }
 #menu2 ul li a:hover{
     color: rgb(245, 245, 247);
@@ -141,7 +149,7 @@ nav .bar{
         display: block;
         padding: 0;
     }
-    nav ul{
+    .menu ul{
         display: none;
     }
     
