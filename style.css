@@ -31,11 +31,11 @@ nav .bar{
     cursor: pointer;
 }
 .logo h1{
-    padding-top: 10px;
+    padding-top: 5px;
 }
 .logo img{
     border-radius: 50%;
-    width: 100px;
+    width: 80px;
     filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
     /* mix-blend-mode: color-burn; */
 }
@@ -63,22 +63,53 @@ nav .bar{
     text-underline-offset: 5px;
 }
 
-nav ul{
+.menu ul{
     display: flex;
     list-style: none;
 }
-nav ul li a{
-    padding: 10px;
+.menu ul li{
+    position: relative;
+}
+.menu ul li a{
+    padding: 20px;
     text-decoration: none;
     color: white; font-size: 20px;
     font-weight: 400px;
     transition: .4s all ease-in-out;
 }
-nav ul li a:hover{
+.menu ul li a:hover{
     color: rgb(210, 210, 228);
     text-decoration: underline 2px white;
     text-underline-offset: 5px;
 }
+.dropdown{
+    display: none;
+}
+.menu ul li:hover .dropdown{
+    position: absolute;
+    display: block;
+    background-color:#098BBE;
+    padding: 10px 0;
+    width: 180px;
+    left: -50%;
+    top: 180%;
+}
+.menu ul li:hover .dropdown ul{
+    display: block;
+    list-style: none;
+}
+/* .menu ul li:hover .dropdown ul li a{
+    text-decoration: underline;
+} */
+.menu ul li:hover .dropdown ul li{
+    margin: 10px 0;
+    padding: 10px 0;
+}
+.dropdown ul li a:hover{
+    color: darkblue;
+    text-decoration: none;
+} 
+
 /* utility Class */
 .visible {
     display: block !important;
