@@ -380,14 +380,15 @@ nav .bar{
         grid-column-end: 13;
     }
     #body-2 .right-part .image1{
-        display: none;
+        display: block;
     }
     #body-2 .right-part .image2{
-        display: block;
+        display: none;
         opacity: 1;
         filter: none;
         border-radius: 25% 5%;
         box-shadow: 2px 3px 100px rgba(0, 0, 0, 0.438);
+
     }
 }
 /*BODY-3 CSS*/
