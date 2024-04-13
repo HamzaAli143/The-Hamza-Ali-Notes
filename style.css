@@ -226,7 +226,7 @@ nav .bar{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
     grid-template-rows: 1fr ;
    background-color: #F6FBFF;
-   background: linear-gradient(45deg, #098BBE, rgb(84, 71, 201), #875db8, #28d5db, #1cb7f5);
+   background: linear-gradient(45deg, #098BBE, rgb(84, 71, 201), #875db8, #1e898d, #227191);
    background-size: 300% 300%;
    animation-name: moving;
    animation-duration: 5s; animation-timing-function: linear; animation-iteration-count: infinite; 
@@ -260,30 +260,96 @@ nav .bar{
     border: 2px solid white; color: white; margin-top: 5%;
     border-radius: 30px;
 }
-.left-part{
+#body-2 .left-part{
     grid-column-start: 3;
     grid-column-end: 7;
 }
-.right-part{
+#body-2 .right-part{
     grid-column-start: 8;
     grid-column-end: 11;
+    padding-top: 5%;
+    /* border: 2px solid white; */
+}
+#body-2 .right-part .image1{
+   transition: .6s all ease-in-out;
+    animation-name: opacity;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-radius: 20% 5%; opacity: .5; filter: drop-shadow(3px 2px 40px black);
+}
+#body-2 .right-part .image2{
+    display: none;
+}
+
+#body-2 .right-part .image1:hover{
+    opacity: .8;
+    cursor: pointer;
+    transform: scale(1.1);
+    /* animation-name: opacity;
+    animation-duration: 0.000000000001s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    border: 2px solid linear-gradient(45deg, #098BBE, rgb(84, 71, 201), #875db8, #1e898d, #227191) */
+}
+#body-2 .right-part p{
+    padding-top: 5%;
+}
+@keyframes opacity {
+    0%{
+        opacity: 0.5;
+    }
+    20%{
+        opacity: 0.6;
+    }
+    40%{
+        opacity: 0.7;
+    }
+    60%{
+        opacity: 0.7;
+    }
+    80%{
+        opacity: 0.6;
+    }
+    100%{
+        opacity: 0.5;
+    }
 }
 @media only screen and (max-width:800px) and (min-width:200px){
     #body-2{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr;
         padding: 5%;
     }
-    .left-part{
+    #body-2 .left-part{
         grid-column-start: 1;
         grid-row-start: 2;
         grid-column-end: 13;
+        /* margin-top: -25%; */
     }
-    .right-part{
+    #body-2 .right-part img{
+        transition: .6s all ease-in-out;
+         animation-name: opacit;
+         animation-duration: 0.0001s;
+         animation-iteration-count: infinite;
+         animation-timing-function: 1;
+         border-radius: 20% 5%; filter: drop-shadow(3px 2px 40px black);
+     }
+    #body-2 .right-part{
         grid-row-start: 1;
         grid-column-start: 1;
         grid-column-end: 13;
+    }
+    #body-2 .right-part .image1{
+        display: none;
+    }
+    #body-2 .right-part .image2{
+        display: block;
+        opacity: 1;
+        filter: none;
+        border-radius: 25% 5%;
+        box-shadow: 2px 3px 100px rgba(0, 0, 0, 0.438);
     }
 }
 /*BODY-3 CSS*/
