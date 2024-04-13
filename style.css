@@ -325,6 +325,18 @@ nav .bar{
         opacity: 0.5;
     }
 }
+@keyframes opacity1 {
+    0%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 0.5;
+    }
+   
+}
 @media only screen and (max-width:965px) and (min-width:800px){
     #body-2{
         display: grid;
@@ -381,6 +393,14 @@ nav .bar{
     }
     #body-2 .right-part .image1{
         display: block;
+        transform: .4s all ease;
+        border-radius: 25% 5%;
+        box-shadow: 2px 3px 100px rgba(0, 0, 0, 0.438);
+        animation-name: opacity1;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        border-radius: 20% 5%; filter: drop-shadow(3px 2px 40px black);
     }
     #body-2 .right-part .image2{
         display: none;
@@ -388,7 +408,11 @@ nav .bar{
         filter: none;
         border-radius: 25% 5%;
         box-shadow: 2px 3px 100px rgba(0, 0, 0, 0.438);
-
+        animation-name: opacity1;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        border-radius: 20% 5%; filter: drop-shadow(3px 2px 40px black);
     }
 }
 /*BODY-3 CSS*/
