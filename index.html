@@ -42,7 +42,7 @@
             </ul>
         </div>
         <div id="click" class="bar">
-            <button id="mobileNavToggle"><img src="./Location-icons/bar.png" alt=""></button>
+            <button id="mobileNavToggle" onclick="clicked('')"><img src="./Location-icons/bar.png" alt=""></button>
         </div>
     </nav>
 
@@ -75,7 +75,7 @@
             <button>Join Us</button>
         </div>
         <div class="right-part">
-            <img src="./my-pik.jpg" alt="" width="100%" class="image1">
+            <img src="./my-pik.jpg" alt="" width="100%" height="100%" class="image1">
             <img src="./my-pik.jpg" alt="" width="100%" class="image2">
         </div>
       
@@ -595,6 +595,11 @@
     <script>
         const mobileNavToggle = document.getElementById('mobileNavToggle')
         const mobileMenu = document.getElementById('menu2');
+        function clicked(){
+            const mobileMenu = document.getElementById('menu2');
+            // menu2.style.padding = '10%'
+            console.log(after.menu2);
+        }
 
         mobileNavToggle.addEventListener('click', () => {
             if (mobileMenu.classList.contains('visible')) {
