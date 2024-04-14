@@ -170,7 +170,7 @@ nav .bar{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-   padding: 2% 0;
+   padding: 7% 0;
 }
 .body-1-content{
     grid-column-start: 2;
@@ -178,10 +178,38 @@ nav .bar{
     text-align: center;
     /* border: 2px solid black; */
 }
-
+#body-1 h4::before{
+    content: "";
+    width: 100%;
+    
+    /* padding: 3% 0; */ height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline;
+    transition: .3s all ease;
+    animation-name: body-1-animation;
+    animation-duration: 1.9s;
+    animation-delay: .5s;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+    animation-timing-function: linear
+}
+@keyframes body-1-animation {
+    0%{
+        width: 100%;
+        background-color: #F5F5F5;
+    }
+    100%{
+        background-color: #F5F5F5;
+        width: 0%;
+    }
+}
 #body-1 h4{
     font-size: 50px;
+    display: inline;
     font-family: arial;
+    position: relative;
 }
 #body-1 .body-1-content{
     padding: 50px 0;
@@ -227,7 +255,13 @@ nav .bar{
         font-size: 18px;
         
     }
-    
+   
+}
+@media only screen and (max-width:650px) and (min-width:200px){
+    #body-1 h4::before{
+        animation-name: body-1-animation;
+        animation-play-state: paused;
+    }
 }
 
 /*BODY-2 CSS*/
