@@ -46,7 +46,7 @@ nav .bar{
     /* mix-blend-mode: color-burn; */
 }
 #menu2{
-    opacity: 0;
+    transform: translateX(100%);
     position: fixed;
     right: 0%;
     top: 10%;
@@ -128,7 +128,7 @@ nav .bar{
 
 /* utility Class */
 .visible {
-    opacity: 1 !important;
+    transform: translateX(0%)!important;
 }
 @media only screen and (max-width:450px) and (min-width:200px){
     nav{
@@ -257,10 +257,14 @@ nav .bar{
     }
    
 }
-@media only screen and (max-width:650px) and (min-width:200px){
+@media only screen and (max-width:980px) and (min-width:200px){
     #body-1 h4::before{
         animation-name: body-1-animation;
         animation-play-state: paused;
+        position: relative;
+    }
+    #body-1 h4{
+        position: inherit;
     }
 }
 
