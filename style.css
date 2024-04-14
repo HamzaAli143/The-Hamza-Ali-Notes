@@ -99,25 +99,41 @@ nav .bar{
     text-underline-offset: 5px;
 }
 .dropdown{
-    display: none;
-}
-.menu ul li:hover .dropdown{
+    transform: translateY(-130%) ;  
+    transition: .5s all ease;
     position: absolute;
-    display: block;
+    border-radius: 0 0 20px 20px;
     background-color:#098BBE;
     padding: 10px 0;
     width: 180px;
     left: -50%;
     top: 180%;
 }
-.menu ul li:hover .dropdown ul{
+.menu ul .notes:hover .dropdown{
+    position: absolute;
+    transform: translateY(0%) ;
+    background-color:#098BBE;
+    padding: 10px 0;
+    width: 180px;
+    left: -50%;
+    top: 180%;
+}
+.dropdown ul{
+    display: block;
+    list-style: none;
+}
+.menu ul .notes:hover .dropdown ul{
     display: block;
     list-style: none;
 }
 /* .menu ul li:hover .dropdown ul li a{
     text-decoration: underline;
 } */
-.menu ul li:hover .dropdown ul li{
+.dropdown ul li{
+    margin: 10px 0;
+    padding: 10px 0;
+}
+.menu ul .notes:hover .dropdown ul li{
     margin: 10px 0;
     padding: 10px 0;
 }
