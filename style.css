@@ -324,6 +324,11 @@ nav .bar{
     border: 2px solid white; color: white; margin-top: 5%;
     border-radius: 30px;
 }
+#body-2 button:hover{
+    background-color: rgba(255, 255, 255, 0.404);
+    cursor: pointer;
+        color: rgb(255, 255, 255);
+    }
 #body-2 .left-part{
     grid-column-start: 3;
     grid-column-end: 7;
@@ -336,20 +341,21 @@ nav .bar{
 }
 #body-2 .right-part .image1{
    transition: .6s all ease-in-out;
-    animation-name: opacity;
-    animation-duration: 5s;
+    animation-name: opaciy;
+        border: 2px solid white;
+        animation-duration: 5s;
     animation-iteration-count: infinite;
+    animation-play-state: paused;
     animation-timing-function: linear;
-    border-radius: 20% 5%; opacity: .5; filter: drop-shadow(3px 2px 40px black);
+    border-radius: 5% 5%; filter: drop-shadow(3px 2px 40px black);
 }
 #body-2 .right-part .image2{
     display: none;
 }
 
 #body-2 .right-part .image1:hover{
-    opacity: .8;
     cursor: pointer;
-    transform: scale(1.1);
+    transform: rotate(5deg);
     /* animation-name: opacity;
     animation-duration: 0.000000000001s;
     animation-iteration-count: 1;
@@ -434,40 +440,19 @@ nav .bar{
     }
     #body-2 .right-part img{
         transition: .6s all ease-in-out;
-         animation-name: opacit;
-         animation-duration: 0.0001s;
-         animation-iteration-count: infinite;
-         animation-timing-function: 1;
-         border-radius: 20% 5%; filter: drop-shadow(3px 2px 40px black);
+       
+         border-radius: 5% 5%; filter: drop-shadow(3px 2px 40px black);
+     }
+     #body-2 .right-part .image1:hover{
+        transform: rotate(0deg);
      }
     #body-2 .right-part{
         grid-row-start: 1;
         grid-column-start: 1;
         grid-column-end: 13;
     }
-    #body-2 .right-part .image1{
-        display: block;
-        transform: .4s all ease;
-        border-radius: 25% 5%;
-        box-shadow: 2px 3px 100px rgba(0, 0, 0, 0.438);
-        animation-name: opacity1;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        border-radius: 20% 5%; filter: drop-shadow(3px 2px 40px black);
-    }
-    #body-2 .right-part .image2{
-        display: none;
-        opacity: 1;
-        filter: none;
-        border-radius: 25% 5%;
-        box-shadow: 2px 3px 100px rgba(0, 0, 0, 0.438);
-        animation-name: opacity1;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        border-radius: 20% 5%; filter: drop-shadow(3px 2px 40px black);
-    }
+   
+    
 }
 /*BODY-3 CSS*/
 #body-3{
@@ -693,6 +678,13 @@ nav .bar{
     background-color: transparent;
     border: 2px solid white; color: white; margin-top: 5%;
     border-radius: 30px;
+    transition: .3s all ease-in-out;
+}
+
+#body-4 button:hover{
+background-color: rgba(255, 255, 255, 0.404);
+cursor: pointer;
+    color: rgb(255, 255, 255);
 }
 .left-part{
     grid-column-start: 3;
