@@ -99,12 +99,14 @@ nav .bar{
     text-underline-offset: 5px;
 }
 .dropdown{
-    transform: translateY(-130%) ;  
+    transform: translateY(-90%) ;  
     transition: .5s all ease;
     position: absolute;
     border-radius: 0 0 20px 20px;
-    background-color:#098BBE;
+    /* background-color:#098BBE; */
+    background-color: transparent;
     padding: 10px 0;
+    color: #098BBE;
     width: 180px;
     left: -50%;
     top: 180%;
@@ -137,9 +139,15 @@ nav .bar{
     margin: 10px 0;
     padding: 10px 0;
 }
+.dropdown ul li a{
+    color: #098BBE;
+}
+.menu ul .notes:hover .dropdown ul li a{
+    color: white;
+}
 .dropdown ul li a:hover{
     color: darkblue;
-    text-decoration: none;
+    text-decoration: underline 2px white;
 } 
 
 /* utility Class */
