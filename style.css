@@ -20,11 +20,11 @@ nav{
 nav .bar{
     position: fixed;
     right: 5%;
-    top: 2%;
+    top: 3%;
     display: none;
     background-color: rgb(9, 139, 190);
     border-radius: 10px;
-    
+    z-index: 1010;
     /* border: 2px solid white; */
 }
 .bar button{
@@ -49,27 +49,29 @@ nav .bar{
     transform: translateX(100%);
     position: fixed;
     right: 0%;
-    top: 10%;
+    top: 0%;
     padding: 2% 8% 2% 2%;
    /* border-radius: 30px 30px 0 0; */
-    background-color: #098bbedc;
-    backdrop-filter: blur(7px);
+    background-color: #098bbe;
+    /* backdrop-filter: blur(7px); */
     transition: .5s all ease-in-out;
-    
+    height: 100%;
+    padding: 40px 20px;
+    z-index: 1000;
 }
 #menu2 ul{
     display: block;
-    padding-top: 20px;
+    padding-top: 40px;
     list-style: none;
 }
 #menu2 ul li {
     text-align: center;
-    padding: 15px 0;
+    padding: 25px 0;
 }
 #menu2 ul li a{
-    padding: 20px 0;
+    padding: 25px 0;
     text-decoration: none;
-    color: white; font-size: 20px;
+    color: white; font-size: 30px;
     font-weight: 400px;
     transition: .4s all ease-in-out;
 }
